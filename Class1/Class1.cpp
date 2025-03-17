@@ -26,7 +26,6 @@ int Sum(int x, int y)
 int main()
 {
     /*
-    */
     int length = 5;
     //int height; //선언
     //height = 0; //초기화
@@ -37,6 +36,7 @@ int main()
 
     length = 10;
     std::cout << length;
+    */
 
     //int a = 1000000000;
     //unsigned long long a = 10000000000000;
