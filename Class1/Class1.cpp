@@ -25,7 +25,7 @@ int Sum(int x, int y)
 
 int main()
 {
-    //std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n";
     //입력 연산자 <<
     //출력 연산자 >>
 
