@@ -25,13 +25,14 @@ int Sum(int x, int y)
 
 int main()
 {
+    //std::cout << "Hello World!\n";
+    //입력 연산자 <<
+    //출력 연산자 >>
+
     /*
     int length = 5;
     //int height; //선언
     //height = 0; //초기화
-    //std::cout << "Hello World!\n";
-    //입력 연산자 <<
-    //출력 연산자 >>
     std::cout << length << std::endl;
 
     length = 10;
