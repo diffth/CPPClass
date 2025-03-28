@@ -1,16 +1,22 @@
 #include <iostream>
 
 // C/C++ 언리얼 학습 진행 
-// 1.변수
+// 1.변수(자료형 - type)
+//		정수(short, int, long...)
+//		실수(float, double...)
+//		문자(char) -> 문자열(string)
+//		상수(const)
+//		bool(boolean) 1/0, true/false
 // 2.연산자
-// 3.제어문
-// 4.함수
+// 3.함수
+// 4.제어문
 // 5.객체
 
 //void 리턴타입 없음, 빈값
 //void max1();	//한줄주석 ctrl + /
 
-/* 아스트릭, 별, 포인터, 블록주석, 곱셈연산자
+/* 가나다라 */
+/* *(아스트릭, 별), 포인터, 블록주석, 곱셈연산자
 void max2();
 void max3();
 */
@@ -19,6 +25,7 @@ void max3();
 //한줄복제 ctrl + d
 
 //리턴타입 int 형
+/*
 int main()
 {
 	std::cout << "Hello World!\n";	//\n -> new line 줄바꿈
@@ -44,5 +51,7 @@ int main()
 	std::cout << height << std::endl;
 
 	return 0;
-}
 
+	//_
+}
+*/
