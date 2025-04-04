@@ -4,24 +4,42 @@
 //v 1.변수(자료형 - type)
 //		정수(short, int, long...)
 //		실수(float, double...)
-//		문자(char) -> 문자열(string)
+//		문자(char) -> 문자열(string):클래스
 //		상수(const)
 //		bool(boolean) 1/0, true/false
-// 2.연산자
+//v 2.연산자
 //      산술연산자( +, -, *, /, % )
 //      대입연산자( =, +=, -=, *=, /=, %=)
 //      비교연산자( ==, !=, >, >=, <, <= )
 //      논리연산자( &&, ||, ! )
+// ---------------------------------------------------
+//      증감연산자( ++x, x++, --x, x-- ) 전위/후위
+//      기타연산자( 비트연산자 [<<, >>], 
+//                  쉼표연산자 [,], 
+//                  삼항연산자 [조건식 ? A : B], 
+//                  sizeof() - 메모리크기반환,
+//                  :: 범위지정연산자 [std::cout, std::endl...]
+//                )
 // 3.함수
+//      함수 선언, 정의, 호출
+//      main()
+//      입출력함수(printf, scanf, cout, cin, endl...)
+// ---------------------------------------------------
+// 
 // 4.제어문
+//      조건문( if, if...else, if...else if,...)
+//      반복문
+// 
+//           
+// 
 // 5.객체
 
 #include <iostream>
 
+/*
 int main()
 {
     //std::cout << "Hello World!\n";
-    /*
     int result = 0;
     result = 5 + 5 * 5; // * 우선순위
     std::cout << result << std::endl;
@@ -43,7 +61,6 @@ int main()
     //result2 = 10.0 / 3.0;
     result2 = (float)10 / 3;    //(float)10 -> 명시적 형변환
     std::cout << "result2 = " << result2 << std::endl;
-    */
 
     int result = 5;
     //result = result + 2;
@@ -69,8 +86,8 @@ int main()
     std::cout << "OR  " << ((a >= b) || (a >= c)) << std::endl;
     std::cout << "NOT " << !(a >= b) << std::endl;
 
-
 }
+*/
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
 // 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
