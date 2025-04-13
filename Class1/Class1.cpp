@@ -23,8 +23,8 @@ int Sum(int x, int y)
 }
 */
 
-int main()
-{
+//int main()
+//{
     //std::cout << "Hello World!\n";
     //입력 연산자 <<
     //출력 연산자 >>
@@ -66,8 +66,8 @@ int main()
     //std::cout << isTrue << std::endl;
     bool isTrue = true;
     bool isFalse = false;
-    std::cout << isTrue << std::endl;
-    std::cout << isFalse << std::endl;
+    //std::cout << isTrue << std::endl;
+    //std::cout << isFalse << std::endl;
 
     //const int Limit = 20;
     ////Limit = 10;
@@ -307,7 +307,7 @@ int main()
         }
     }
     ***************************/
-}
+//}
 
 int Sum(int x, int y)
 {
