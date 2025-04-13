@@ -25,7 +25,7 @@ int Sum(int x, int y)
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n";
     //입력 연산자 <<
     //출력 연산자 >>
 
@@ -43,7 +43,7 @@ int main()
     //unsigned long long a = 10000000000000;
     //std::cout << "a의 값은: " << a << std::endl;
 
-    ////int MyInt = -10;
+    //int MyInt = -10;
     ////long MyLong = -59423949595959;
 
     //float MyFloat = 10.255;
@@ -56,15 +56,18 @@ int main()
     ////0 은 false
     //std::cout << (A == B) << std::endl;
 
-    /*char MyChar = 'A';
-    std::cout << MyChar << std::endl;
-    char MyChar2 = 50;
-    std::cout << MyChar2;*/
+    //char MyChar = 'A';
+    //std::cout << MyChar << std::endl;
+    //char MyChar2 = 50;
+    //std::cout << MyChar2;
 
-    /*bool isTrue = 0;
+    //bool isTrue = 0;
+    //bool isFalse = 0;
+    //std::cout << isTrue << std::endl;
+    bool isTrue = true;
+    bool isFalse = false;
     std::cout << isTrue << std::endl;
-    isTrue = true;
-    std::cout << isTrue << std::endl;*/
+    std::cout << isFalse << std::endl;
 
     //const int Limit = 20;
     ////Limit = 10;
