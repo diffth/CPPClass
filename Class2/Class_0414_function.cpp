@@ -13,8 +13,8 @@ int Sum(int a, int b)
 	return temp;		//함수의 출력 값에 temp 값 반환
 }
 
-int main()
-{
+//int main()
+//{
 	/*
 	int c;		// 변수 c 선언
 	int a = 3;	//변수 a 선언 및 초기화
@@ -79,4 +79,4 @@ int main()
 	*/
 
 
-}
+//}
