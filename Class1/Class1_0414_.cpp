@@ -54,6 +54,7 @@ int main()
     }
     */
     
+    /*
     int exceptNum = 2;
     for (int i = 1; i <= 100; i++)
     {
@@ -63,6 +64,7 @@ int main()
         }
         cout << i << "\t";
     }
+    */
 
     /*
     int sum = 0;
@@ -71,7 +73,10 @@ int main()
         sum += i;
     }
     cout << sum << endl;
+    */
 
+    /*
+    //X
     int fact = 1;
     int startNum = 5;
     for (int i = startNum; i > 0; --i)
