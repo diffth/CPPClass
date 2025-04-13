@@ -95,7 +95,7 @@ int main()
     }
     while (isTrue);
     */
-
+    
     /*
     char ch;
     while (1)
@@ -111,9 +111,6 @@ int main()
     cout << "무한루프 탈출 성공! " << endl;
     */
 
-    /*
-    MyInfiLoop();
-    */
 
     /*
     char ch1;
@@ -156,6 +153,7 @@ int main()
     */
 
     /*
+    //구구단
     for (int i = 2; i < 10; i++)
     {
         for (int j = 1; j < 10; j++)
@@ -166,7 +164,7 @@ int main()
     }
     */
 
-    /*
+    
     for (int i = 1; i < 10; i++)
     {
         for (int j = 2; j < 10; j++)
@@ -175,21 +173,5 @@ int main()
         }
         cout << endl;
     }
-    */
-
-    //내용: 1씩 증가하는 수열과 합
-    //❖초기값:1
-    //❖10번 까지반복
-    //❖수열의최종값출력
-    //❖수열의합출력
-    
-    /*
-    int sum = 0;
-    for (int i = 1; i <= 10; i++)
-    {
-        sum += i;
-    }
-    cout << sum << endl;
-    */
 
 }
