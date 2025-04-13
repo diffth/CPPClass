@@ -153,7 +153,7 @@ int main()
     */
 
     /*
-    //구구단
+    //구구단1
     for (int i = 2; i < 10; i++)
     {
         for (int j = 1; j < 10; j++)
@@ -164,7 +164,8 @@ int main()
     }
     */
 
-    
+    /*
+    //구구단2
     for (int i = 1; i < 10; i++)
     {
         for (int j = 2; j < 10; j++)
@@ -173,5 +174,46 @@ int main()
         }
         cout << endl;
     }
+    */
+    
+    //int num;
+    //cout << "숫자입력 : ";
+    //cin >> num;
+    
+    /*
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    */
+
+    /*
+    for (int i = num; i >= 1; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }*/
+
+    /*
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= num * 3 - i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            cout << (" *");
+        }
+        cout << endl;
+    }
+    */
 
 }
