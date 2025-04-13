@@ -14,8 +14,8 @@
 
 #define Pi 3.14
 
-using namespace A;
-using namespace B;
+using namespace F;
+using namespace M;
 using namespace std;
 
 void CheckIncrement();

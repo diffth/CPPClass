@@ -1,8 +1,8 @@
-#include "MyMath.h"
 #include <iostream>
+#include "MyMath.h"
 
-int B::Sum(int a, int b)
+int M::Sum(int a, int b)
 {
-	std::cout << "B에서 호출";
+	std::cout << "M에서 호출 ";
 	return a + b;
 }

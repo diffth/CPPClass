@@ -1,5 +1,5 @@
 #pragma once
-namespace B
+namespace M
 {
 	int Sum(int a, int b);
 }

@@ -30,12 +30,24 @@
     <ClCompile Include="C.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyFirst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="B.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFirst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

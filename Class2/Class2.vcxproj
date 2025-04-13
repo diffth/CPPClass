@@ -132,10 +132,14 @@
     <ClCompile Include="C.cpp" />
     <ClCompile Include="Class2.cpp" />
     <ClCompile Include="Class_0414_function.cpp" />
+    <ClCompile Include="MyFirst.cpp" />
+    <ClCompile Include="MyMath.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="B.h" />
     <ClInclude Include="C.h" />
+    <ClInclude Include="MyFirst.h" />
+    <ClInclude Include="MyMath.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,14 @@
 #include <iostream>
 #include <stdio.h>
+#include <math.h>
+#include "MyFirst.h"
+#include "MyMath.h"
 #define _CRT_SECURE_NO_WARNINGS
+#define Pi 3.14
 
 using namespace std;
+using namespace F;
+using namespace M;
 
 //int Sum(int a, int b);
 
@@ -13,8 +19,8 @@ int Sum(int a, int b)
 	return temp;		//함수의 출력 값에 temp 값 반환
 }
 
-//int main()
-//{
+int main()
+{
 	/*
 	int c;		// 변수 c 선언
 	int a = 3;	//변수 a 선언 및 초기화
@@ -78,5 +84,8 @@ int Sum(int a, int b)
 	cout << "Goodbye!" << endl;
 	*/
 
+	//cout << Sum(10, 5) << std::endl; //오류
+	cout << F::Sum(10, 5) << std::endl;
+	cout << M::Sum(5, 4);
 
-//}
+}

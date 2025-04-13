@@ -1,7 +1,6 @@
 #pragma once
-namespace A
+namespace F
 {
 	void PrintVariable(int local_A);
 	int Sum(int a, int b);
-
 }
