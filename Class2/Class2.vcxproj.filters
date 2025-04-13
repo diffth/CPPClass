@@ -18,5 +18,8 @@
     <ClCompile Include="Class2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Class_0414_function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

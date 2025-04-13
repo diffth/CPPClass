@@ -28,8 +28,8 @@ void MyInfiLoop();
 int global_A = 5;
 static int static_A = 0;
 
-int main()
-{
+//int main()
+//{
     //std::cout << "Hello!\n";
     //std::cout << A::Sum(10, 5) << std::endl;
     //std::cout << B::Sum(5, 4);
@@ -512,6 +512,7 @@ int main()
     * 런타임 오류 뜰 수 있으니까, 그럴 때는 디버깅 정지버튼을 누르면 됨
     */
 
+    /*
     int arr[10] = { 1, 1, 1, 1, 1, 1, 0, };
     int n;
     cin >> n;
@@ -531,7 +532,8 @@ int main()
         cout << arr[j] << " ";
     }
     return 0;
-}
+    */
+//}
 
 void CheckIncrement()
 {
