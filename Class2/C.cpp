@@ -1,8 +1,14 @@
 #include <iostream>
+#include "C.h"
 
 using namespace std;
 
-void Cfunction()
+//void Cfunction()
+//{
+//	cout << "World";
+//}
+
+void C::Myfunction()
 {
-	cout << "World";
+	cout << "C Myfunction" << endl;
 }
