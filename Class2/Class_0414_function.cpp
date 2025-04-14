@@ -85,7 +85,16 @@ int main()
 	*/
 
 	//cout << Sum(10, 5) << std::endl; //오류
-	cout << F::Sum(10, 5) << std::endl;
-	cout << M::Sum(5, 4);
+	cout << F::Sum(10, 5) << endl;
+	cout << M::Sum(5, 4) << endl;;
+
+	float r = 3;//반지름
+	float l;	//원의 둘레 
+	float s;	//원의 넓이
+	l = 2 * r * Pi; //둘레 공식
+	s = r * r * Pi; //넓이 공식
+
+	cout << l << endl;
+	cout << s << endl;
 
 }
