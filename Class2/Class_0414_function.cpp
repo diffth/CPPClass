@@ -1,5 +1,5 @@
-#include <iostream>
-#include <stdio.h>
+#include <iostream>	//c++ library
+#include <stdio.h>	//c	library
 #include <math.h>
 #include "MyFirst.h"
 #include "MyMath.h"
@@ -7,72 +7,58 @@
 #define Pi 3.14
 
 using namespace std;
-using namespace F;
-using namespace M;
 
-//int Sum(int a, int b);
+int Sum(int i, int j);
 
-//ÇÔ¼öÀÇ ¼±¾ğ°ú µ¿½Ã¿¡ Á¤ÀÇ
-int Sum(int a, int b)	
-{
-	int temp = a + b;	//º¯¼ö temp ¼±¾ğ, a+b °ªÀ» ´ëÀÔ
-	return temp;		//ÇÔ¼öÀÇ Ãâ·Â °ª¿¡ temp °ª ¹İÈ¯
-}
-
+/*
 int main()
 {
-	/*
-	int c;		// º¯¼ö c ¼±¾ğ
-	int a = 3;	//º¯¼ö a ¼±¾ğ ¹× ÃÊ±âÈ­
-	int b = 4;	//º¯¼ö b ¼±¾ğ ¹× ÃÊ±âÈ­
-	c = Sum(a, b);	//ÇÔ¼öÀÇ È£Ãâ
-	cout << c << endl;		//c¸¦ Ãâ·Â
-	*/
-	//return 0;
+	//cout << "Hello" << endl;
+	int c;		//ë³€ìˆ˜ ì„ ì–¸
+	int aa = 3;	//ë³€ìˆ˜ ì„ ì–¸, ì´ˆê¸°í™”
+	int bb = 4;	//ë³€ìˆ˜ ì„ ì–¸, ì´ˆê¸°í™”
+	//í•¨ìˆ˜ì˜ í˜¸ì¶œí›„ return ê°’ì„ int c ê°’ì— ëŒ€ì…
+	c = Sum(aa, bb);
+	cout << c << endl;
 
-	/*
-	printf("Hello");
-	cout << endl;
-	printf("Hello\n");
-	printf("Hello\?");
-	cout << endl;
-	printf("\"Hello\"");
-	cout << endl;
-	*/
+	cout << Sum(10, 5) << endl;
+	cout << F::Sum(10, 5) << endl;
+	cout << M::Sum(5, 4) << endl;
+
+	//ì›ì˜ ë‘˜ë ˆ r * 2 * Pi
+	//ì›ì˜ ë„“ì´ r * r * Pi
+	float r = 3;//ë°˜ì§€ë¦„
+	float l;	//ì›ì˜ ë‘˜ë˜
+	float s;	//ì›ì˜ ë„“ì´
+
+	l = r * 2 * Pi;
+	s = r * r * Pi;
+
+	cout << l << endl;
+	cout << s << endl;
+
+	//printf("Hello");
+	//cout << endl;
+	//printf("Hello\n");
+	//printf("Hello\?");
+	//cout << endl;
+	//printf("\"Hello\"");
+	//cout << endl;
 
 	//char initial = 'S';
-	//printf("My Name is %c \n", initial);
-	//printf("I am %d years old\n", 15);
-	//printf("Goodbye\n");
-	//printf("%d %d %d\n", 10, 5, 20);
+	//printf("My Name is %c. \n", initial);
+	//printf("I am %d years old.\n", 5 + 1);
+	//printf("I am %s years old.\n", "51");
+	//printf("Good bye.\n");
+	//printf("%d %d %d", 10, 5, 20);	//decimal
 
-	//char input;
-	//scanf_s("%c", &input);
-	//printf("ÀÔ·Â: %c\n", input);
+	char input;
+	int age;
+	scanf_s("%c", &input);
+	printf("ì´ë¦„: %c\n", input);
+	scanf_s("%d", &age);
+	printf("ë‚˜ì´: %d\n", age);
 
-	//cout << "Hi";
-	//cout << "My Name is S" << "I am 15 years old";
-	//cout << "Goodbye!";
-
-	/*
-	int age = 25;
-	char initial = 'K';
-	cout << "Hi";
-	cout << "My Name is" << initial;
-	cout << "I am " << age << " years old";
-	cout << "Goodbye!";
-	*/
-
-	/*
-	int age = 25;
-	char initial = 'K';
-	cout << "Hi" << endl;
-	cout << "My Name is" << initial << endl;
-	cout << "I am " << age << " years old\n";
-	cout << "Goodbye!" << endl;
-	*/
-
-	/*
 	int age;
 	char initial;
 	cin >> age;
@@ -80,21 +66,16 @@ int main()
 
 	cout << "Hi" << endl;
 	cout << "My Name is " << initial << endl;
-	cout << "I am " << age << " years old\n"; //ÁÙ ¹Ù²Ş
-	cout << "Goodbye!" << endl;
-	*/
+	cout << "I am " << age << " years old" << endl;
+	cout << "Good bye!";
 
-	//cout << Sum(10, 5) << std::endl; //¿À·ù
-	cout << F::Sum(10, 5) << endl;
-	cout << M::Sum(5, 4) << endl;;
+	//return 0;
+}
+*/
 
-	float r = 3;//¹İÁö¸§
-	float l;	//¿øÀÇ µÑ·¹ 
-	float s;	//¿øÀÇ ³ĞÀÌ
-	l = 2 * r * Pi; //µÑ·¹ °ø½Ä
-	s = r * r * Pi; //³ĞÀÌ °ø½Ä
-
-	cout << l << endl;
-	cout << s << endl;
-
+//í•¨ìˆ˜ ì„ ì–¸ê³¼ ì •ì˜
+int Sum(int m, int n)
+{
+	int temp = m + n;
+	return temp;
 }
