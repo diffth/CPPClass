@@ -1,8 +1,10 @@
-#include <iostream>
 #include "MyMath.h"
+#include <iostream>
+
+using namespace std;
 
 int M::Sum(int a, int b)
 {
-	std::cout << "M¿¡¼­ È£Ãâ ";
+	cout << "M ì—ì„œì˜ Sum í•¨ìˆ˜ ì‹¤í–‰" << endl;
 	return a + b;
 }
