@@ -1,14 +1,14 @@
 #include <iostream>
+#include "C.h"
 #include "B.h"
-//#include "C.h"
 
 using namespace std;
 
-//void B::Bfunction()
-//{
-//	cout << "Hello ";
-//	//Cfunction();
-//}
+void B::Bfunction()
+{
+	cout << "Hello ";
+	//Cfunction();
+}
 
 void B::Myfunction()
 {
