@@ -36,7 +36,7 @@
     <ClCompile Include="MyMath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Class_0416.cpp">
+    <ClCompile Include="Class_0416_.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

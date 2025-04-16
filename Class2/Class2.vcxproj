@@ -132,7 +132,7 @@
     <ClCompile Include="C.cpp" />
     <ClCompile Include="Class2.cpp" />
     <ClCompile Include="Class_0414_function.cpp" />
-    <ClCompile Include="Class_0416.cpp" />
+    <ClCompile Include="Class_0416_.cpp" />
     <ClCompile Include="MyFirst.cpp" />
     <ClCompile Include="MyMath.cpp" />
   </ItemGroup>
