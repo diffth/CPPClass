@@ -17,15 +17,14 @@ int Sum(int a, int b)
 	return temp;		//함수의 출력 값에 temp 값 반환
 }
 
+/*
 int main()
 {
-	/*
 	int c;		// 변수 c 선언
 	int a = 3;	//변수 a 선언 및 초기화
 	int b = 4;	//변수 b 선언 및 초기화
 	c = Sum(a, b);	//함수의 호출
 	cout << c << endl;		//c를 출력
-	*/
 	//return 0;
 
 	cout << Sum(10, 5) << endl;
@@ -78,7 +77,6 @@ int main()
 
 	//return 0;
 }
-*/
 
 	//cout << Sum(10, 5) << std::endl; //오류
 	cout << F::Sum(10, 5) << endl;
@@ -94,3 +92,4 @@ int main()
 	cout << s << endl;
 
 }
+*/
