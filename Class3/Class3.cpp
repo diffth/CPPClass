@@ -94,8 +94,8 @@ T Add(T a, T b)
 }
 
 
-int main()
-{
+//int main()
+//{
     /*
     int a = 10;
     //cout << a << endl;
@@ -563,9 +563,7 @@ int main()
     6. 위의절차반복
     */
 
-
-
-}
+//}
 
 void ChangeByValue(int a_v)
 {
