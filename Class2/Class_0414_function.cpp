@@ -10,6 +10,10 @@ using namespace std;
 using namespace F;
 using namespace M;
 
+//void CallMyself();
+void CallMyself(int);
+int Factorial(int num);
+
 //int Sum(int a, int b);
 
 //함수의 선언과 동시에 정의
@@ -19,8 +23,8 @@ int Sum(int a, int b)
 	return temp;		//함수의 출력 값에 temp 값 반환
 }
 
-int main()
-{
+//int main()
+//{
 	/*
 	int c;		// 변수 c 선언
 	int a = 3;	//변수 a 선언 및 초기화
@@ -85,16 +89,49 @@ int main()
 	*/
 
 	//cout << Sum(10, 5) << std::endl; //오류
-	cout << F::Sum(10, 5) << endl;
-	cout << M::Sum(5, 4) << endl;;
+	//cout << F::Sum(10, 5) << endl;
+	//cout << M::Sum(5, 4) << endl;;
 
-	float r = 3;//반지름
-	float l;	//원의 둘레 
-	float s;	//원의 넓이
-	l = 2 * r * Pi; //둘레 공식
-	s = r * r * Pi; //넓이 공식
+	//float r = 3;//반지름
+	//float l;	//원의 둘레 
+	//float s;	//원의 넓이
+	//l = 2 * r * Pi; //둘레 공식
+	//s = r * r * Pi; //넓이 공식
 
-	cout << l << endl;
-	cout << s << endl;
+	//cout << l << endl;
+	//cout << s << endl;
 
+	//float a = 30; //deg 를 의미
+	//float b;
+	//b = sin(a);
+	//cout << "b값 : " << b << endl;
+
+	//double aa = 30 * Pi / 180;
+	//float bb = sin(aa);
+	//cout << bb << endl;
+
+	//CallMyself();
+	//CallMyself(5);
+	//cout << Factorial(5);
+//}
+
+void CallMyself(int num)
+{
+	cout << "자기 자신을 호출했다!" << endl;
+	--num;
+	if (num >= 0)
+	{
+		CallMyself(num);
+	}
+	//CallMyself();
+	//cout << Factorial(5) << endl;
+}
+
+int Factorial(int num)
+{
+	if (num <= 1)
+	{
+		return 1;
+	}
+	return num * Factorial(num - 1);
 }

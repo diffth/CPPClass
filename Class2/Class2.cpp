@@ -20,8 +20,8 @@ using namespace std;
 
 void CheckIncrement();
 //void CallMyself();
-void CallMyself(int);
-int Factorial(int num);
+//void CallMyself(int);
+//int Factorial(int num);
 int SumArrary(int arr[], int length);
 void MyInfiLoop();
 
@@ -542,32 +542,32 @@ void CheckIncrement()
 }
 
 //void CallMyself()
-void CallMyself(int num)
-{
-    --num;
-    cout << "자기 자신을 호출했다!" << endl;
-    if (num >= 0)
-    {
-        CallMyself(num);
-    }
-    //CallMyself();
+//void CallMyself(int num)
+//{
+//    --num;
+//    cout << "자기 자신을 호출했다!" << endl;
+//    if (num >= 0)
+//    {
+//        CallMyself(num);
+//    }
+//    //CallMyself();
+//
+//    //cout << Factorial(5) << endl;
+//}
 
-    //cout << Factorial(5) << endl;
-}
-
-int Factorial(int num)
-{
-    if (num <= 1)
-    {
-        return 1;
-    }
-    return num * Factorial(num - 1);
-}
-
-int SumArrary(int arr[], int length)
-{
-    return 1;
-}
+//int Factorial(int num)
+//{
+//    if (num <= 1)
+//    {
+//        return 1;
+//    }
+//    return num * Factorial(num - 1);
+//}
+//
+//int SumArrary(int arr[], int length)
+//{
+//    return 1;
+//}
 
 void MyInfiLoop()
 {
