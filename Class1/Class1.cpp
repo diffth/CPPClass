@@ -1,337 +1,129 @@
-﻿// Class1.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
+// Class1.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <iostream>
-#include <stdio.h>
-#define _CRT_SECURE_NO_WARNINGS
+//C/C++ 언리얼 학습 진행
+//1.변수(기본 자료형 type)
+//      정수(int...)
+//      실수(float, double...)
+//      문자형(char) -> 문자열(string) 클래스...
+//      bool(boolean) 1/0, true/false
+//      상수(const)
+// -----------------------------------------------
+//      local, global, static variable
+//      사용자 정의 자료형
+//          열거체 enumerate type
+//          구조체 structure type
+// 
+//2.연산자
+//      산술연산자(+, -, *, /, %)
+//      대입연산자(=, +=, -=, *=, /=, %=)
+//      비교연산자(==, !=, >, >=, <, <=)
+//      논리연산자(&&, ||, !)
+//      증감연산자(++x, x++, --x, x--)
+//      기타연산자
+//          비트연산자(<<, >>....) 
+//          쉼표(,)연산자
+//          삼항연산자(조건식 ? A : B)
+//          sizeof() 메모리크기반환 연산
+//          ::범위지정연산자 std::cout
+//          namespace 이름공간 (using namespace std;)
+// 
+//3.제어문
+//      조건문
+//          if, if/else, if/else if/else
+//          switch case
+//      반복문
+//          while문, do while문
+//          for문
+// 
+//4.함수
+//      함수 선언, 정의, 호출
+//      main()
+//      입출력함수(printf()/scanf(), cout/cin/endl
+//      모듈화(.h, .cpp), 전처리기((선행처리기)
+//      메모리구조(
+//                  코드   : code
+//                  데이터 : global, static variable
+//                  heap   : 동적 할당(dynamic allocation)
+//                  stack  : local, parameter
+//                )
+// 
+//5.객체
+//
+// 
+//::VisualStudio
+//      debug/debugging
+//      breakpoint, F5
+//      build
 
-int Sum(int x, int y);
-bool IsNumLargertahnZero(int num);
-bool IsCoin();
 
-void MyCount()
-{
-    std::cout << "Hi";
-}
 
-/*
-int Sum(int x, int y)
-{
-    int z;
-    z = x + y;
-    return z;
-}
+/* ctrl + shift + /
+블록주석
 */
 
-//int main()
-//{
-    //std::cout << "Hello World!\n";
-    //입력 연산자 <<
-    //출력 연산자 >>
+/* 가나다라 */
+/* *(별, 아스티릭), 포인터, 블록주석, 곱셈연산자
+*/
 
-    /*
+//한줄 복제 ctrl + d
+//한줄이동 alt + ↑, alt + ↓
+
+//한줄 주석 ctrl + /
+//void max1();
+//void max2();
+//void max3();
+//리턴타입 x 빈...
+
+#include <iostream>
+
+//리턴타입 int(정수) 형
+/*
+int main()
+{
+    //std::cout << "Hello World!\n";  // \n -> new line 줄바꿈
+    //<< 출력연산자
+    //>> 입력연산자
+    //return 0;
+
+    //A = B;    //대입연산자
+    //A == B;   //== 값이 같다.
+    //A === B;  //== 타입, 값이 같다.
+    //5 == '5';   //true
+    //5 === '5';  //false
+
     int length = 5;
-    //int height; //선언
-    //height = 0; //초기화
+    int height;
+    height = 4; //변수 초기화 x -> 오류발생
+
     std::cout << length << std::endl;
+    std::cout << height << std::endl;   //초기화되지 않은 'height' 지역 변수를 사용했습니다.
+    //\n -> new line / endl -> endline 줄바꿈
 
     length = 10;
-    std::cout << length;
-    */
+    height = 8;
+    std::cout << length << std::endl;
+    std::cout << height << std::endl;
 
-    //int a = 1000000000;
-    //unsigned long long a = 10000000000000;
-    //std::cout << "a의 값은: " << a << std::endl;
+    //int a = 10000000000000000; // int형은 4Byte ↑ Overflow
+    //std::cout << "a의 값은 : " << a << std::endl;
+    //return 0;
 
-    //int MyInt = -10;
-    ////long MyLong = -59423949595959;
+    char myChar = 'A';
+    std::cout << myChar << std::endl;
+    char myChar2 = 50;
+    char myChar3 = 99;
+    int myInt = 50;
 
-    //float MyFloat = 10.255;
-    //MyFloat = 150.233233233;
+    char myB = 'B';
 
-    //float A = 1.2;
-    //float B = 1.2;
+    std::cout << myChar2 << std::endl;
+    std::cout << myChar3 << std::endl;
+    std::cout << myChar+ myB << std::endl;
+    std::cout << myInt << std::endl;
 
-    ////std::cout << (A + B == 2.3) << std::endl;
-    ////0 은 false
-    //std::cout << (A == B) << std::endl;
-
-    //char MyChar = 'A';
-    //std::cout << MyChar << std::endl;
-    //char MyChar2 = 50;
-    //std::cout << MyChar2;
-
-    //bool isTrue = 0;
-    //bool isFalse = 0;
-    //std::cout << isTrue << std::endl;
-    bool isTrue = true;
-    bool isFalse = false;
-    //std::cout << isTrue << std::endl;
-    //std::cout << isFalse << std::endl;
-
-    //const int Limit = 20;
-    ////Limit = 10;
-    //std::cout << Limit << std::endl;
-
-    /*int a = (int)10.52323;
-    std::cout << a << std::endl;*/
-
-    //int result = 0;
-    ////result = 5 + 5 * 5;
-    ////result = (5 + 5) * 5;
-    ////result = 5 / 5;
-    ////result = 5 % 2;
-    //result = 10 / 3;
-    //std::cout << result << std::endl;
-
-    //float result2 = 0.0;
-    ////result2 = 10 / 3;
-    //result2 = (float)10 / 3;
-    //std::cout << result2;
-
-    //int result = 5;
-    ////result += 2;
-    //result %= 2;
-    //std::cout << result;
-
-    /*int x = 5;
-    int y = 10;
-    int result = 0;
-
-    result = Sum(x, y);
-    std::cout << result;*/
-
-    //MyCount();
-
-    /*
-    char initial = 'S';
-    scanf_s("%c", &initial);
-    //printf("Hello World!\n");
-    //printf("Hello World!");
-    //printf("My initial is %c%c %c", initial, initial, initial);
-    printf("My initial is %c", initial);
-    */
-
-    /*
-    std::cout << "Hello World!" << " Hello World " << 5 << std::endl;
-    std::cout << "Hello World!\n";
-
-    std::cout << "나이를 입력: ";
-    int age;
-    std::cin >> age;
-    std::cout << "My Age is " << age;
-    */
-
-    /*
-    char initial;
-    unsigned int age;
-    float height;
-    float weight;
-    float bmi;
-    std::cout << "■ 인적정보(이니셜, 나이, 키, 무게)를 입력" << std::endl;
-    std::cout << "이니셜입력: ";
-    std::cin >> initial;
-    std::cout << "나이입력: ";
-    std::cin >> age;
-    std::cout << "키입력: ";
-    std::cin >> height;
-    std::cout << "몸무게입력: ";
-    std::cin >> weight;
-
-    std::cout << "\n이니셜: " << initial << std::endl;
-    std::cout << "나이: " << age << std::endl;
-    std::cout << "키: " << height << std::endl;
-    std::cout << "몸무게: " << weight << std::endl;
-    std::cout << "BMI: " << (height - 100) / weight << std::endl;
-    */
-    /*
-    int a = 2;
-    int b = 5;
-    std::cout << (a == b) << std::endl;
-    std::cout << (a < b) << std::endl;
-    */
-
-    /*
-    bool a = true;
-    bool b = false;
-    std::cout << (a&&b) << std::endl;
-    std::cout << (a||b) << std::endl;
-    std::cout << (!b) << std::endl;
-    */
-
-    /*
-    int a = 5;
-    int b = 2;
-    int c = 10;
-    std::cout << (a >= b) << std::endl;
-    std::cout << ((a >= b)&&(a >= c)) << std::endl;
-    */
-
-    /*
-    int x = 5;
-    //int y = (++x) + 5;
-    int y = (x++) + 5;
-    std::cout << y << " : " << x << std::endl;
-    */
-
-    /*
-    int a = 10, b = 5;
-    int greater;
-    greater = (a > b) ? a : b;
-    std::cout << greater << std::endl;
-    */
-
-    /*
-    int a;
-    double b;
-    //std::cout << sizeof(a) << std::endl;
-    std::cout << sizeof(int) << std::endl;
-    std::cout << sizeof(b) << std::endl;
-    */
-
-    /*
-    ///조건문
-    int key;
-    std::cin >> key;
-    if (key == 5)
-    {
-        std::cout << "금고가 열렸습니다.";
-    }
-    */
-    /*
-    int key;
-    std::cin >> key;
-    if (key == 5)
-    {
-        std::cout << "금고가 열렸습니다.";
-    }
-    else
-    {
-        std::cout << "금고가 안열렸습니다.";
-    }
-    */
-
-    /*
-    int key;
-    std::cin >> key;
-
-    //if (IsNumLargertahnZero(key))
-    if (key > 5)
-    {
-        //std::cout << "0 보다 크다";
-        std::cout << "5 보다 크다";
-    }
-    else if (key <= 5)
-    {
-        std::cout << "5 같거나 작다";
-    }
-    else if(key<=0)
-    {
-        std::cout << "";
-    }
-    */
-
-    /*
-    int a = 5, b = 2;
-    if (a > 0)
-    {
-        std::cout << "a 는 0보다 크다" << std::endl;
-        if (b > 0)
-        {
-            std::cout << "b 는 0보다 크다" << std::endl;
-        }
-    }
-
-    if ((a > 0) && (b > 0))
-    {
-        std::cout << "a, b는 0보다 크다" << std::endl;
-    }
-    */
-
-    /***************************
-    if (IsCoin())
-    {
-        //int water = 200, cMix = 50;
-        //int water = 50, cMix = 50;
-        //int water = 200, cMix = 5;
-        int water = 50, cMix = 5;
-
-        /*
-        if (water >= 100 && cMix >= 10)
-        {
-            std::cout << "커피출력" << std::endl;
-        }
-        else if (water < 100 && cMix >= 10)
-        {
-            std::cout << "물 부족" << std::endl;
-        }
-        else if (water >= 100 && cMix < 10)
-        {
-            std::cout << "커피믹스부족" << std::endl;
-        }
-        else if (water < 100 && cMix < 10)
-        {
-            std::cout << "물, 커피믹스 부족" << std::endl;
-        }
-        */
-
-        /*
-        if ((water >= 100) && (cMix >= 10))
-        {
-            std::cout << "커피 출력" << std::endl;
-        }
-        else
-        {
-            if (water < 100) { std::cout << "물 부족" << std::endl; }
-            if (cMix < 10) { std::cout << "커피믹스 부족" << std::endl; }
-        }
-        */
-        
-        /*
-        if ((water < 100) && (cMix < 10))
-        {
-            std::cout << "물 부족" << std::endl;
-            std::cout << "커피믹스 부족" << std::endl;
-        }
-        else if (water < 100)
-        {
-            std::cout << "물 부족" << std::endl;
-        }
-        else if (cMix < 10)
-        {
-            std::cout << "커피믹스 부족" << std::endl;
-        }
-        else
-        {
-            std::cout << "커피 출력" << std::endl;
-        }
-    }
-    ***************************/
-//}
-
-int Sum(int x, int y)
-{
-    int z;
-    z = x + y;
-    return z;
 }
-
-bool IsNumLargertahnZero(int num)
-{
-    if (num > 0)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
-bool IsCoin()
-{
-    return true;
-}
+*/
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
 // 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴

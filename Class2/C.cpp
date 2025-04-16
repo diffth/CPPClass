@@ -3,10 +3,10 @@
 
 using namespace std;
 
-//void Cfunction()
-//{
-//	cout << "World";
-//}
+void C::Cfunction()
+{
+	cout << "World";
+}
 
 void C::Myfunction()
 {

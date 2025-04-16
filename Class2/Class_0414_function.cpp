@@ -1,5 +1,5 @@
-#include <iostream>
-#include <stdio.h>
+#include <iostream>	//c++ library
+#include <stdio.h>	//c	library
 #include <math.h>
 #include "MyFirst.h"
 #include "MyMath.h"
@@ -7,76 +7,65 @@
 #define Pi 3.14
 
 using namespace std;
-using namespace F;
-using namespace M;
-
-//void CallMyself();
-void CallMyself(int);
-int Factorial(int num);
 
 //int Sum(int a, int b);
 
-//ÇÔ¼öÀÇ ¼±¾ğ°ú µ¿½Ã¿¡ Á¤ÀÇ
+//í•¨ìˆ˜ì˜ ì„ ì–¸ê³¼ ë™ì‹œì— ì •ì˜
 int Sum(int a, int b)	
 {
-	int temp = a + b;	//º¯¼ö temp ¼±¾ğ, a+b °ªÀ» ´ëÀÔ
-	return temp;		//ÇÔ¼öÀÇ Ãâ·Â °ª¿¡ temp °ª ¹İÈ¯
+	int temp = a + b;	//ë³€ìˆ˜ temp ì„ ì–¸, a+b ê°’ì„ ëŒ€ì…
+	return temp;		//í•¨ìˆ˜ì˜ ì¶œë ¥ ê°’ì— temp ê°’ ë°˜í™˜
 }
 
-//int main()
-//{
+int main()
+{
 	/*
-	int c;		// º¯¼ö c ¼±¾ğ
-	int a = 3;	//º¯¼ö a ¼±¾ğ ¹× ÃÊ±âÈ­
-	int b = 4;	//º¯¼ö b ¼±¾ğ ¹× ÃÊ±âÈ­
-	c = Sum(a, b);	//ÇÔ¼öÀÇ È£Ãâ
-	cout << c << endl;		//c¸¦ Ãâ·Â
+	int c;		// ë³€ìˆ˜ c ì„ ì–¸
+	int a = 3;	//ë³€ìˆ˜ a ì„ ì–¸ ë° ì´ˆê¸°í™”
+	int b = 4;	//ë³€ìˆ˜ b ì„ ì–¸ ë° ì´ˆê¸°í™”
+	c = Sum(a, b);	//í•¨ìˆ˜ì˜ í˜¸ì¶œ
+	cout << c << endl;		//cë¥¼ ì¶œë ¥
 	*/
 	//return 0;
 
-	/*
-	printf("Hello");
-	cout << endl;
-	printf("Hello\n");
-	printf("Hello\?");
-	cout << endl;
-	printf("\"Hello\"");
-	cout << endl;
-	*/
+	cout << Sum(10, 5) << endl;
+	cout << F::Sum(10, 5) << endl;
+	cout << M::Sum(5, 4) << endl;
+
+	//ì›ì˜ ë‘˜ë ˆ r * 2 * Pi
+	//ì›ì˜ ë„“ì´ r * r * Pi
+	float r = 3;//ë°˜ì§€ë¦„
+	float l;	//ì›ì˜ ë‘˜ë˜
+	float s;	//ì›ì˜ ë„“ì´
+
+	l = r * 2 * Pi;
+	s = r * r * Pi;
+
+	cout << l << endl;
+	cout << s << endl;
+
+	//printf("Hello");
+	//cout << endl;
+	//printf("Hello\n");
+	//printf("Hello\?");
+	//cout << endl;
+	//printf("\"Hello\"");
+	//cout << endl;
 
 	//char initial = 'S';
-	//printf("My Name is %c \n", initial);
-	//printf("I am %d years old\n", 15);
-	//printf("Goodbye\n");
-	//printf("%d %d %d\n", 10, 5, 20);
+	//printf("My Name is %c. \n", initial);
+	//printf("I am %d years old.\n", 5 + 1);
+	//printf("I am %s years old.\n", "51");
+	//printf("Good bye.\n");
+	//printf("%d %d %d", 10, 5, 20);	//decimal
 
-	//char input;
-	//scanf_s("%c", &input);
-	//printf("ÀÔ·Â: %c\n", input);
+	char input;
+	int age;
+	scanf_s("%c", &input);
+	printf("ì´ë¦„: %c\n", input);
+	scanf_s("%d", &age);
+	printf("ë‚˜ì´: %d\n", age);
 
-	//cout << "Hi";
-	//cout << "My Name is S" << "I am 15 years old";
-	//cout << "Goodbye!";
-
-	/*
-	int age = 25;
-	char initial = 'K';
-	cout << "Hi";
-	cout << "My Name is" << initial;
-	cout << "I am " << age << " years old";
-	cout << "Goodbye!";
-	*/
-
-	/*
-	int age = 25;
-	char initial = 'K';
-	cout << "Hi" << endl;
-	cout << "My Name is" << initial << endl;
-	cout << "I am " << age << " years old\n";
-	cout << "Goodbye!" << endl;
-	*/
-
-	/*
 	int age;
 	char initial;
 	cin >> age;
@@ -84,54 +73,24 @@ int Sum(int a, int b)
 
 	cout << "Hi" << endl;
 	cout << "My Name is " << initial << endl;
-	cout << "I am " << age << " years old\n"; //ÁÙ ¹Ù²Ş
-	cout << "Goodbye!" << endl;
-	*/
+	cout << "I am " << age << " years old" << endl;
+	cout << "Good bye!";
 
-	//cout << Sum(10, 5) << std::endl; //¿À·ù
-	//cout << F::Sum(10, 5) << endl;
-	//cout << M::Sum(5, 4) << endl;;
-
-	//float r = 3;//¹İÁö¸§
-	//float l;	//¿øÀÇ µÑ·¹ 
-	//float s;	//¿øÀÇ ³ĞÀÌ
-	//l = 2 * r * Pi; //µÑ·¹ °ø½Ä
-	//s = r * r * Pi; //³ĞÀÌ °ø½Ä
-
-	//cout << l << endl;
-	//cout << s << endl;
-
-	//float a = 30; //deg ¸¦ ÀÇ¹Ì
-	//float b;
-	//b = sin(a);
-	//cout << "b°ª : " << b << endl;
-
-	//double aa = 30 * Pi / 180;
-	//float bb = sin(aa);
-	//cout << bb << endl;
-
-	//CallMyself();
-	//CallMyself(5);
-	//cout << Factorial(5);
-//}
-
-void CallMyself(int num)
-{
-	cout << "ÀÚ±â ÀÚ½ÅÀ» È£ÃâÇß´Ù!" << endl;
-	--num;
-	if (num >= 0)
-	{
-		CallMyself(num);
-	}
-	//CallMyself();
-	//cout << Factorial(5) << endl;
+	//return 0;
 }
+*/
 
-int Factorial(int num)
-{
-	if (num <= 1)
-	{
-		return 1;
-	}
-	return num * Factorial(num - 1);
+	//cout << Sum(10, 5) << std::endl; //ì˜¤ë¥˜
+	cout << F::Sum(10, 5) << endl;
+	cout << M::Sum(5, 4) << endl;;
+
+	float r = 3;//ë°˜ì§€ë¦„
+	float l;	//ì›ì˜ ë‘˜ë ˆ 
+	float s;	//ì›ì˜ ë„“ì´
+	l = 2 * r * Pi; //ë‘˜ë ˆ ê³µì‹
+	s = r * r * Pi; //ë„“ì´ ê³µì‹
+
+	cout << l << endl;
+	cout << s << endl;
+
 }

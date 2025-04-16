@@ -1,19 +1,23 @@
-#include <iostream>
 #include "MyFirst.h"
+#include <iostream>
 
 using namespace std;
-extern int global_A;
 
-void F::PrintVariable(int local_A)
-{
-	global_A++;
-	local_A++;
-	cout << "·ÎÄÃA: " << local_A << endl;
-	cout << "Àü¿ªA: " << global_A << endl;
-}
+extern int global_A;
 
 int F::Sum(int a, int b)
 {
-	std::cout << "F¿¡¼­ È£Ãâ ";
+	cout << "F ì—ì„œì˜ Sum í•¨ìˆ˜ ì‹¤í–‰" << endl;
 	return a + b;
 }
+
+void F::PrintVariable(int arg1)
+{
+	//local_A != arg1
+	arg1++;
+	global_A++;
+	cout << "ë§¤ê°œë³€ìˆ˜ arg1 : " << arg1 << endl;
+	cout << "ì „ì—­ë³€ìˆ˜ global_A : " << global_A << endl;
+}
+
+

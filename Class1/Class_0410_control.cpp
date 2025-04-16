@@ -2,13 +2,13 @@
 
 using namespace std;
 
+/*
 int main()
 {
 	//int num;
 	//cin >> num;
 
 	//if문
-	/*
 	if (num < 5)
 	{
 		cout << "입력하신 수는 5보다 작다." << endl;
@@ -21,10 +21,8 @@ int main()
 	{
 		cout << "입력하신 수는 5보다 크다." << endl;
 	}
-	*/
 
 	//if else문
-	/*
 	if (num < 5)
 	{
 		cout << "입력하신 수는 5보다 작다." << endl;
@@ -40,10 +38,8 @@ int main()
 			cout << "입력하신 수는 5보다 크다." << endl;
 		}
 	}
-	*/
 
 	//if elseif... else문
-	/*
 	if (num < 5)
 	{
 		cout << "입력하신 수는 5보다 작다." << endl;
@@ -56,9 +52,7 @@ int main()
 	{
 		cout << "입력하신 수는 5보다 크다." << endl;
 	}
-	*/
 
-	/*
 	switch (num)
 	{
 		case 1:
@@ -80,7 +74,6 @@ int main()
 			cout << "1부터 5까지의 수가 아닙니다." << endl;
 			break;
 	}
-	*/
 
 	int score;
 	string grade;
@@ -135,4 +128,4 @@ int main()
 	}
 	cout << "당신의 학점은: " << grade << " (" << gpa << "점)" << endl;
 }
-
+*/

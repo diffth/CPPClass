@@ -3,7 +3,7 @@
 
 //int main()
 //{
-//	//Bfunction();
-//	B::Myfunction();
-//	C::Myfunction();
+	//Bfunction();
+	//B::Myfunction();
+	//C::Myfunction();
 //}
