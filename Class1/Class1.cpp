@@ -23,10 +23,11 @@
 //          이중포인터
 //          포인터연산
 //          배열 포인터 * / 포인터 배열 []
-//          동적 메모리 할당(new), 해제(delete) / 메모리 누수(memory leak)
-//          
-//      
-//          
+//          동적 메모리 할당 생성(new), 해제(delete) / 메모리 누수(memory leak)
+//          배열의 동적할당
+//              생성 int* arr = new int[10]();         
+//              해제 delete[] arr;
+//          참조자 변수의 별명 int& a_ref = a;
 // 
 //2.연산자
 //      산술연산자(+, -, *, /, %)
@@ -61,6 +62,14 @@
 //                  heap   : 동적 할당(dynamic allocation)
 //                  stack  : local, parameter
 //                )
+//      매개변수(인수 전달 방법) parameter, argument
+//          call by value       값
+//          call by address     주소
+//          call by reference   참조
+//      const 매개변수
+//      디폴트 인수 default argument
+//      함수 오버로딩 Overloading
+//          함수 중복 정의
 // 
 //5.객체
 //
